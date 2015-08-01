@@ -1,3 +1,11 @@
+*{
+	-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
 #wrapper {
 	width:320px;
 	height:320px;
@@ -6,18 +14,62 @@
 	border:1px solid #333;
 	font-size:0;
 }
+
+#buttonwrapper{
+	padding:0;
+	margin:0;
+	text-align:center;
+}
+
 .square {
 	width:20px;
 	height:20px;
 	margin:0 auto;
-
 	background-color: #ddd;
 	display:inline-block;
 }
-input[name=reset] {
-	display:block;
+
+#pencolor{
+	width:320px;
+	height:35px;
+	padding:5px;
+	margin:0 auto;
+	text-align:center;
+}
+
+#pencolor div {
+	width:25px;
+	height:25px;
+	display:inline-block;
+	border:1px solid black ;
+	margin: 5px 5px;
+	border-radius:100%;
+}
+#red{
+	background-color: red;
+}
+#green{
+	background-color: green;
+}
+#blue{
+	background-color: blue;
+}
+#pink{
+	background-color: pink;
+}
+#yellow{
+	background-color: yellow;
+}
+#white{
+	background-color: white;
+}
+
+input {
+	display:inline-block;
 	margin:10px auto;
 	border:1px solid #e1e1e1;
+	border-radius:7px;
 	background-color:#eee;
-	font-size:30px;
+	font-size:20px;
+	color:black;
 }
