@@ -2,11 +2,16 @@ var pencolor = "red";
 $(document).ready(function(){
 	addSquares(16);
 
+	$('#red').css("border-style","solid");
+
 	$('#wrapper').on('mousedown',function(){
 			$('#wrapper').on('mouseover','.square',function(){
 				$(this).css('background-color',pencolor);
 			});
+	});
 
+	$('#wrapper').mouseup(function(){
+		$('#wrapper').off('mouseover','.square');
 	});
 
 	$('input[name=clear]').click(function(){
@@ -21,6 +26,11 @@ $(document).ready(function(){
 		addSquares(value);
 		$('.square').css("width",320/value);
 		$('.square').css("height",320/value);
+	});
+
+	$('#pencolor div').click(function(){
+		$('#pencolor div').css("border-style","dashed");
+		$(this).css("border-style","solid");
 	});
 
 });
