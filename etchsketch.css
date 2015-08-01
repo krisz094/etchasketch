@@ -1,0 +1,23 @@
+#wrapper {
+	width:320px;
+	height:320px;
+	margin:0 auto;
+	padding:0;
+	border:1px solid #333;
+	font-size:0;
+}
+.square {
+	width:20px;
+	height:20px;
+	margin:0 auto;
+
+	background-color: #ddd;
+	display:inline-block;
+}
+input[name=reset] {
+	display:block;
+	margin:10px auto;
+	border:1px solid #e1e1e1;
+	background-color:#eee;
+	font-size:30px;
+}
